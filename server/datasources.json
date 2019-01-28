@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mongoDs": {
+    "host": "ds213665.mlab.com",
+    "port": 13665,
+    "url": "",
+    "database": "lucky-lotto-db",
+    "password": "i_am_number_4",
+    "name": "mongoDs",
+    "user": "sys",
+    "connector": "mongodb"
   }
 }
