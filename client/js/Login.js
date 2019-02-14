@@ -1,6 +1,6 @@
 var myApp = angular.module("myApp", ["lbServices", "ngRoute"]);
 
-myApp.controller("Login", function ($scope, User, $location, $window) {
+myApp.controller("Login", function ($scope, $http, User, $location, $window) {
     // $scope.error = false;
     // User.logout();
     console.log(User.isAuthenticated());
@@ -15,6 +15,7 @@ myApp.controller("Login", function ($scope, User, $location, $window) {
 
             function (response) {
                 console.log(response);
+                $http.setCookie("access_token", response.id);
                 $window.location.href = "/temp"
                 $scope.error = false;
 

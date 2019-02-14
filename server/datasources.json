@@ -4,11 +4,11 @@
     "connector": "memory"
   },
   "mongoDs": {
-    "host": "ds213665.mlab.com",
-    "port": 13665,
+    "host": "127.0.0.1",
+    "port": 27017,
     "url": "",
-    "database": "lucky-lotto-db",
-    "password": "i_am_number_4",
+    "database": "lucky_lotto",
+    "password": "",
     "name": "mongoDs",
     "user": "sys",
     "connector": "mongodb"
